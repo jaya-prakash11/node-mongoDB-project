@@ -30,6 +30,7 @@ const errorHandeler = (err, req, res, next ) =>{
             break;
     }
 
+    next();
     
 }
 

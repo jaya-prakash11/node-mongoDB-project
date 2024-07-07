@@ -8,7 +8,9 @@ const userShema = mongoose.Schema({
     },
     email:{
         type:String,
-        required:[true , 'Please enter the email']
+        required:[true , 'Please enter the email'],
+        unique:[true, 'Email address already taken']
+
     },
     password:{
         type:String,
